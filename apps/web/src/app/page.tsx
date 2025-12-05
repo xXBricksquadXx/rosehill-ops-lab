@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 type Profile = {
   id: string;
@@ -49,16 +50,17 @@ export default async function HomePage() {
             </div>
           </div>
 
-          <span className="inline-flex items-center rounded-full border border-brand-accent/60 px-3 py-1 text-xs text-brand-accent">
+          <span className="inline-flex items-center rounded-full border border-brand-accent px-3 py-1 text-xs text-brand-accent">
             API: <span className="ml-1 font-mono">GET /profiles</span>
           </span>
         </header>
 
         <section className="grid gap-4 md:grid-cols-2">
           {profiles.map((p) => (
-            <article
+            <Link
               key={p.id}
-              className="rounded-2xl border border-brand-accent/30 bg-brand-surface/95 p-4 shadow-md shadow-black/50"
+              href={`/profiles/${p.key}`}
+              className="rounded-2xl border border-brand-accent/40 bg-brand-surface/95 p-4 shadow-md shadow-black/50 transition hover:border-brand-accent hover:bg-brand-surface"
             >
               <h2 className="text-lg font-medium">{p.label}</h2>
               <p className="mt-1 text-xs uppercase tracking-wide text-brand-muted">
@@ -67,7 +69,7 @@ export default async function HomePage() {
               <p className="mt-3 text-sm text-brand-text/90">
                 {p.description}
               </p>
-            </article>
+            </Link>
           ))}
         </section>
       </div>
