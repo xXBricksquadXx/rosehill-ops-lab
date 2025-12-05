@@ -1,0 +1,37 @@
+services:
+  api:
+    build:
+      context: ../..
+      dockerfile: infra/docker/Dockerfile.api
+    container_name: rosehill-ops-api
+    ports:
+      - '8000:8000'
+    environment:
+      - MONGO_URL=mongodb://mongo:27017/rosehill_ops
+    depends_on:
+      - mongo
+
+  mongo:
+    image: mongo:7
+    container_name: rosehill-ops-mongo
+    restart: always
+    ports:
+      - '27017:27017'
+    volumes:
+      - mongo_data:/data/db
+
+  mongo-express:
+    image: mongo-express
+    container_name: rosehill-ops-mongo-express
+    restart: always
+    ports:
+      - '8081:8081'
+    environment:
+      - ME_CONFIG_MONGODB_SERVER=mongo
+      - ME_CONFIG_MONGODB_ENABLE_ADMIN=true
+      - ME_CONFIG_MONGODB_PORT=27017
+    depends_on:
+      - mongo
+
+volumes:
+  mongo_data:
