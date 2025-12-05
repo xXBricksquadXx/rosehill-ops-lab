@@ -1,0 +1,56 @@
+[
+  {
+    "id": "hr-onboarding-tech-001",
+    "profile_key": "hr",
+    "title": "Onboard new field technician",
+    "status": "in_progress",
+    "priority": "high",
+    "assignee": "Dana",
+    "notes": "Paperwork done, waiting on badge + VPN account."
+  },
+  {
+    "id": "hr-timeoff-policy-review",
+    "profile_key": "hr",
+    "title": "Review time-off policy for weekend coverage",
+    "status": "backlog",
+    "priority": "medium",
+    "assignee": "Colby",
+    "notes": "Focus on service truck rotations and phone duty."
+  },
+  {
+    "id": "svc-diagnostic-bench-setup",
+    "profile_key": "service",
+    "title": "Set up diagnostic bench for board-level repairs",
+    "status": "in_progress",
+    "priority": "urgent",
+    "assignee": "Luis",
+    "notes": "Need ESD mats and scope calibrated."
+  },
+  {
+    "id": "svc-rma-triage-flow",
+    "profile_key": "service",
+    "title": "Define RMA triage flow for walk-in customers",
+    "status": "backlog",
+    "priority": "medium",
+    "assignee": "TBD",
+    "notes": "Goal: 5-minute intake with clear next steps."
+  },
+  {
+    "id": "parts-min-max-levels",
+    "profile_key": "parts",
+    "title": "Set min/max bin levels for fast movers",
+    "status": "in_progress",
+    "priority": "high",
+    "assignee": "Rita",
+    "notes": "Start with fuses, chargers, and screens."
+  },
+  {
+    "id": "bol-route-optimization-01",
+    "profile_key": "delivery_bol",
+    "title": "Draft standard morning delivery route",
+    "status": "backlog",
+    "priority": "high",
+    "assignee": "Marcus",
+    "notes": "Align with current BOL stack; capture signature flow."
+  }
+]
