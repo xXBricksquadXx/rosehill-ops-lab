@@ -40,6 +40,15 @@ export default async function HomePage() {
                 priority
               />
             </div>
+            <div className="flex flex-wrap items-center gap-2">
+
+    <Link
+      href="/work-items"
+      className="inline-flex items-center rounded-full border border-brand-accent/60 px-3 py-1 text-xs text-brand-text hover:bg-brand-accent hover:text-brand-bg"
+    >
+      View work board
+    </Link>
+  </div>
             <div>
               <h1 className="text-3xl font-semibold tracking-tight">
                 Rosehill Ops Lab
