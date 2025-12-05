@@ -1,0 +1,22 @@
+[
+  {
+    "key": "hr",
+    "label": "HR",
+    "description": "Hiring, onboarding, time-off, and personnel processes."
+  },
+  {
+    "key": "service",
+    "label": "Service",
+    "description": "Hands-on service jobs, diagnostics, and repair workflow."
+  },
+  {
+    "key": "parts",
+    "label": "Parts",
+    "description": "Parts inventory, ordering, and stock control."
+  },
+  {
+    "key": "delivery_bol",
+    "label": "Delivery / Invoice / BOL",
+    "description": "Delivery runs, invoices, and bill of lading tracking."
+  }
+]
